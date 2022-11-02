@@ -11,6 +11,8 @@ David Feiock
 Galileo
 Udit Vira
 Hypha Worker Co-op
+Kristi Poldsam
+Iqlusion
 Zaki Manian
 Iqlusion
 Max Einhorn
@@ -21,6 +23,8 @@ Jack Zampolin
 Strangelove
 Sacha Saint-Leger
 Hypha Worker Co-op
+Jelena Djuric
+Informal Systems
 1 Introduction
 The vision of the Cosmos Network, as laid out in 2016, has been realized.1
 The creation of a secure software stack for building and connecting applicationspecific blockchains has catalyzed a thriving ecosystem of sovereign interoperable communities and an increasingly dynamic inter-blockchain communication
@@ -34,7 +38,7 @@ meta-political economy, one that recognizes the need for representation of diffe
 from local to global and back.
 1Kwon, Jae; Buchman, Ethan. “Cosmos Whitepaper.” Aug. 2016,
 https://v1.cosmos.network/resources/whitepaper.
-v1.1 1
+v1.2 1
 The Cosmos Hub’s inaugural role was to originate the internet of blockchains.
 It did so by resourcing the development of the Cosmos SDK, IBC, and Tendermint, the core open-source primitives for the blockchain applications that now
 populate the interchain. However, with an active and increasingly sophisticated
@@ -68,7 +72,7 @@ assets.2
 2Lutsch, Felix; Crain, Brian; Shapiro, Gabriel; Dillon, Brendan. “Liquid Staking Research
 Report: Implications of Proof-of-Stake Assets in Decentralized Finance.” Jun. 2020,
 https://mirror.chorus.one/liquid-staking-report.pdf.
-v1.1 2
+v1.2 2
 • Interchain Scheduler: The IBC economy is a patchwork of asynchronous
 markets, introducing an enormous variety of cross-domain maximum extractable value (MEV) opportunities. This market can be made more
 efficient, more secure, and more lucrative for Cosmos chains and their
@@ -88,7 +92,7 @@ With these primitives, the Cosmos Hub will become a self-propagating economic
 engine that drives the expansion and integration of the Cosmos Network. This
 ‘Cosmos Network’ is an area of economic association with the Cosmos Hub,
 primarily via the use of ATOM as the preferred collateral.
-v1.1 3
+v1.2 3
 The Interchain Scheduler and the Interchain Allocator drive the growth of the
 Cosmos Network, together creating a flywheel whereby:
 1. Cosmos Hub collects revenues from interchain economic activity by creating a secure block space market, the Interchain Scheduler, and charging a
@@ -99,7 +103,7 @@ In turn, these projects expand the Scheduler’s addressable market.
 Figure 2: Core positive feedback loop driving the growth of a resilient interchain. The
 Scheduler monetizes IBC economic activity with revenues going to Allocator. The Allocator
 supports new Cosmos chains, expanding the addressable market of the Scheduler.
-v1.1 4
+v1.2 4
 The result is a renewed role for ATOM as preferred collateral within the Cosmos
 Network. The Cosmos Hub becomes a long-term holder of ecosystem assets,
 drawing valuable projects into Cosmos. ATOM stability, liquidity, and the
@@ -123,7 +127,7 @@ Figure 3: Interchain Security empowers independent projects to build on the Cosm
 while Liquid Staking positions ATOM to become the premier interchain reserve asset.
 3Buchman, Ethan; Hart, Sam. “The Cosmos Hub is a Port City.” Feb. 2021,
 https://blog.cosmos.network/the-cosmos-hub-is-a-port-city-5b7f2d28debf.
-v1.1 5
+v1.2 5
 2.1 Interchain Security
 Interchain Security enables the Cosmos Hub to host a novel category of applications with complementary functionality. The Cosmos Hub establishes trust by
 putting ATOM at risk for consumer chain faults, enabling parallel development
@@ -155,7 +159,7 @@ CNS architecture would likely require components deployed both to the
 Cosmos Hub directly as well as a consumer chain.
 4Kwon, Jae. “The Shape of Cosmos.” Sep. 2020,
 https://github.com/jaekwon/cosmos_roadmap/tree/master/shape_of_cosmos.
-v1.1 6
+v1.2 6
 Interchain Security also allows for several avenues of application development.
 Chains may join as independent economic units, diverting a portion of inflation and fees to cover security costs. Alternatively, core Hub functionality may
 be built on a consumer chain and receive financing for infrastructure buildout, opting for a fee split rather than a dedicated token, or some combination
@@ -186,7 +190,7 @@ significant change to the Cosmos Hub’s security model. The most effective way
 to ensure long-term security is to make sure both individual providers and the
 marketplace for provision remains decentralized.
 5Manian, Zaki. “ATOM 2021.” Aug. 2020, https://github.com/cosmosdevs/atom2021.
-v1.1 7
+v1.2 7
 A competitive marketplace for liquid staking provision will further improve the
 consumer experience, driving protocols to compete on several dimensions, including trust minimization and safety. This market for cross-chain liquidity will
 be the catalyst for ATOM deployment across the interchain, creating new waves
@@ -199,75 +203,74 @@ brought back to the target level or the maximum issuance threshold is reached.
 Additional staking is incentivized, increasing security at the cost of liquidity.
 Conversely, if the staking ratio rises above 2/3, issuance incrementally decreases
 to ensure the availability of liquid supply. Staking is thus disincentivized, improving liquidity at the cost of security.
-However, keeping 2/3 of the entire monetary base staked is a substantial capital inefficiency that limits growth and hinders cross-chain composability. Liquid
-staking increases capital efficiency by allowing users to stake ATOM while simultaneously using the claims on staked ATOM as working capital, thus removing
-the competition between staking and other opportunities.
-Since liquid staking solves the problem that the current monetary policy was
-originally designed to address, issuance can now be reconsidered. Rather than
-try to balance security with liquidity, the revised monetary policy should balance
-interchain adoption, growth, and capitalization with fiscal responsibility, while
-preserving the security afforded by the original regime.6
-Following sufficient adoption of liquid staking, this new monetary policy would
-consist of two phases: transition and steady state. The purpose of the transition
-phase is twofold. First, to allow consumer chains time to join Interchain Security,
-helping to subsidize security expenditure, and second, to give the community an
-opportunity to develop the social infrastructure necessary to effectively manage
-a sizable treasury. The transition phase starts the moment that Cosmos shifts
-to the new monetary policy and ends 36 months later, at which point the steady
-state phase begins and lasts indefinitely. During the transition phase, issuance
-directed to the distribution module declines from the present exponential rate,
-approximately 1% of the total ATOM monetary base per month, to a constant
-rate of 300,000 ATOM per month (a nod to the speed of light, 300,000 km per
-second).
-6Chitra, Tarun; Kulkarni, Kshitij. “Improving Proof of Stake Economic Security via MEV
+However, keeping 2/3 of the monetary base staked is a substantial capital inefficiency that limits growth and hinders cross-chain composability. The introduction of liquid staking increases capital efficiency by allowing users to stake
+while simultaneously using the claims on staked ATOM as working capital, thus
+removing the competition between staking and other opportunities.
+Moreover, due to lower volatility the preferred on-ramp to Cosmos is likely
+to shift from unstaked ATOM held on centralized exchanges, to fiat-backed
+stablecoins bridged over IBC. Momentum toward the enhanced capital efficiency
+and user experience of both liquid staked assets and stablecoins will invariably
+result in higher staking rates. For this reason, the Cosmos staking economy
+is on the verge of a transformation that will impact both the proof of stake
+security model and validation businesses built on inflationary rewards. Today
+staking rewards are fundamentally a value transfer from holders of non-staked
+ATOM to stakers. But with close to 100% ATOMs staked there is no dilution,
+thus the validator commission is the only meaningful value transfer.
+With ATOM’s evolving monetary context, issuance must be reconsidered. Rather
+than try to balance security with liquidity, a revised monetary policy should balance interchain adoption, growth, and capitalization with fiscal responsibility,
+meanwhile preserving the security afforded by the original regime.6
+Following sufficient adoption of liquid staking, a new monetary policy would consist of two phases: transition and steady state. The purpose of the transition
+phase is twofold. First, to allow consumer chains time to join Interchain Secu6Chitra, Tarun; Kulkarni, Kshitij. “Improving Proof of Stake Economic Security via MEV
 Redistribution.” Aug. 2022,
 https://people.eecs.berkeley.edu/~ksk/files/MEV_Redistribution.pdf.
-v1.1 8
-Upon initiation of the transition phase, the first of twelve 4,000,000 ATOM
-tranches is deposited into the Treasury. The eleven remaining tranches may be
-issued at any time per ATOM holder vote (shown as yearly intervals in Figure
-4). Further provisions on Treasury use may be determined by ATOM holders
-as later described in section 5.2.
-Issuancedistribution =
-(
-3, 375, 000 ∗ (1 − 0.065)month if month ≤ 36
-300, 000 if month > 36
-The amount of ATOM issued and distributed to validators and delegators as
-a security subsidy will begin at the same level as immediately precedes the
-transition phase. The subsidy will decrease by 6.5% every month for 36 months,
-until it reaches 300,000 ATOM per month. At this point, the revenue generated
-from Interchain Security should exceed the diminished security cost under liquid
-staking and remaining tail emissions directed proportionally toward a set of
-beneficiaries determined by ATOM governance. As a safety measure, if the
-staking rate ever falls below 2/3, the new monetary policy will pause and the
-original monetary policy will resume, incrementally increasing issuance up to
-a maximum percentage of supply until the staking ratio again exceeds 2/3, at
-which point issuance will return to a fixed 300,000 ATOM per month. Note that
-the security subsidy will also continue to fund the Community Pool as staking
-rewards are granted via the distribution module, which will automatically direct
-5% of funds to the Community Pool.
-The remaining issuance is directed to the new Cosmos Hub Treasury and will
-be used to support initiatives that increase adoption, growth, and capitalization
-of the interchain, including public works and opportunities for expansion. By
-having a well funded treasury, the Cosmos Hub can ensure that capital is not an
-obstacle in the pursuit of worthwhile endeavors, enabling more interchain developer activity and greater liquidity; helping protocols bootstrap their economies
-while increasing the Scheduler’s addressable market.
-v1.1 9
-Figure 4: New issuance from time of activation. Issuance during the transition phase (i.e.
-first 36 months) is intended to wean stakers off of the security subsidy. Twelve tranches of
-4,000,000 ATOM may be proposed successively to endow the Cosmos Hub Treasury. The
-Cosmos Hub Treasury is used to capitalize the Allocator and public works.
-Figure 5: Cumulative issuance from time of activation. The proposed new issuance model will
-substantially reduce the growth of total ATOM supply over time by shifting from exponential
-to linear growth.
-v1.1 10
+v1.2 8
+rity, helping to subsidize security expenditure, and second, to give the community an opportunity to develop the social infrastructure necessary to effectively
+manage a sizable treasury. The transition phase would start the moment the
+Cosmos Hub elects to shift to a new monetary policy, and end 36 months later,
+at which point the steady state phase would begin and continue indefinitely.
+During the transition phase, issuance directed to the distribution module would
+decline from the present exponential rate, approximately 1% of the total ATOM
+monetary base per month, to a monthly rate determined by the community in
+accordance with the forthcoming Cosmos Hub Charter (described in section
+5.2). For instance, a perpetual rate of 300,000 ATOM per month, a nod to the
+speed of light, 300,000 km per second, would be mimetically worthy.
+In preparation for the Community Pool’s role in the future of the Cosmos Hub,
+prior to the transition phase a one-time issuance of 4,000,000 ATOM will be
+deposited into the Community Pool to support development, adoption, and
+maintenance of the various components included in this document, including
+the Treasury system and Assembly infrastructure. And in accordance with the
+forthcoming Cosmos Hub Charter, 10 tranches of 4M ATOMs may be issued
+to the Treasury at any time per ATOM holder vote. Further provisions on
+Treasury use, including, if necessary, allocations to the distribution module
+to subsidize the security budget, may be determined within the Cosmos Hub
+Charter. The Charter must make a clear and credible commitment to a known
+ATOM issuance schedule, while simultaneously ensuring the Cosmos Hub is
+sufficiently capitalized to build out the ATOM economy.
+The amount of ATOM issued and distributed to validators and delegators as a
+security subsidy will begin at the same level as immediately precedes the transition phase. The subsidy will decrease by a fixed percent every month for 36
+months, until it reaches the agreed upon tail emission rate. At this point, the
+revenue generated from Interchain Security should exceed the diminished security cost under liquid staking. As a safety measure, if the staking rate ever falls
+below 2/3, the new monetary policy will pause and the original monetary policy
+will resume, incrementally increasing issuance up to a maximum percentage of
+supply until the staking ratio again exceeds 2/3, at which point issuance will
+return to the steady state tail emission rate. Note that the security subsidy
+will also continue to fund the Community Pool as staking rewards are granted
+via the distribution module, which will automatically direct 2% of funds to the
+Community Pool.
+The remaining issuance is directed to the new Cosmos Hub Treasury in tranches
+per ATOM holder vote and will be used to support initiatives that further increase adoption, growth, and capitalization of the interchain, including public
+works and opportunities for expansion. With a well funded Treasury, the Cosmos Hub can ensure that capital is not an obstacle in the pursuit of worthwhile
+endeavors, enabling more interchain developer activity and greater liquidity;
+helping protocols bootstrap their economies while increasing the Scheduler’s
+addressable market.
+v1.2 9
 3.2 Fees
 Today, transaction fees paid to the Cosmos Hub are sent to the distribution
 module and split among the Community Pool, delegators, and validators. With
 the addition of Interchain Security, a portion of transaction fees and issuance
 from each consumer chain will be sent to the Cosmos Hub’s distribution module,
 paying to secure all chains and replacing the current issuance subsidy.
-Figure 6: Interchain Security replaces issuance as a means of incentivizing validators and
+Figure 4: Interchain Security replaces issuance as a means of incentivizing validators and
 delegators. If the stake ratio ever drops below 2/3, issuance will revert to the original issuance
 model until the ratio returns to 2/3 or higher. Issuance not directed to the distribution
 module is directed to the Cosmos Hub Treasury, a new capital pool managed by domainspecific councils to fund public goods and grow a resilient interchain.
@@ -277,7 +280,7 @@ every accepted token is cumbersome and prone to resource mispricing, particularl
 fee, while the base fee is algorithmically priced in response to demand. Exchange
 rates obtained from trust-minimized oracles may then be used to automatically
 update the corresponding price for all remaining whitelisted tokens. The Cosmos
-v1.1 11
+v1.2 10
 Hub governance may then elect to use infrastructure provided by the Allocator
 in order to periodically auction collected fees into a target currency, ATOM, or
 stablecoins before tokens are sent to the distribution module.
@@ -310,7 +313,7 @@ validators running modified software. While attractive for individual users, thi
 7Obadia, Alexandre; Salles, Alejo; Lakshman, Sankar; Chitra, Tarun; Chellani, Vaibhav;
 Daian, Philip. “Unity is Strength: A Formalization of Cross-Domain Maximal Extractable
 Value.” Dec. 2021, https://arxiv.org/pdf/2112.01472.pdf.
-v1.1 12
+v1.2 11
 model presents systemic centralizing concerns if left unchecked. Functionality
 rests on trusted relationships among validators, MEV relays, and builders, even
 extending to intermediation of the node software run by validators. Therefore,
@@ -329,7 +332,7 @@ Using the capabilities enabled by Tendermint’s latest ABCI++ upgrade, transact
 2022, https://medium.com/the-interchain-foundation/tendermints-new-applicationblockchain-interface-abci-86d46bd6f987.
 9Floersch, Karl. “MEV Auction: Auctioning transaction ordering rights as a solution to
 Miner Extractable Value.” Jan. 2020, https://ethresear.ch/t/mev-auction-auctioningtransaction-ordering-rights-as-a-solution-to-miner-extractable-value/6788.
-v1.1 13
+v1.2 12
 The Scheduler system works as follows:
 1. When the consumer chain enables the Scheduler module, it can enter
 into a cross-chain contract to provide a portion of their block space (e.g.,
@@ -345,22 +348,22 @@ auction are sent back to the partner chain.
 By purchasing synchronous regions of block space on different chains, users can
 lock-in arbitrage opportunities or schedule cross-chain settlement transactions
 with strong execution guarantees.
-Figure 7: Depiction of a scheduled sequence of transactions occurring over multiple chains
+Figure 5: Depiction of a scheduled sequence of transactions occurring over multiple chains
 in successive blocks. The Scheduler leverages ABCI++ to enable partner chains to tokenize
 reservations for future block space. Those reservations are auctioned in a common MEV marketplace, enabling stronger atomicity and settlement guarantees than off-chain counterparts.
-v1.1 14
+v1.2 13
 In moving the interchain MEV market on-chain, the Scheduler can offer a trustminimized assurance that users hold an exclusive right to order transactions for
 future block regions. Moreover, a common market for multi-chain block space
 will command higher rates by securing cross-chain atomicity, while establishing
 defensible network effects. This novel market structure is intended to complement the off-chain MEV economy, providing different trade-offs and increasing
 competition to the benefit of chain security.
-Figure 8: The Scheduler creates an in-protocol market for interchain block space, allowing
+Figure 6: The Scheduler creates an in-protocol market for interchain block space, allowing
 chains to specify allowable MEV. Unlike other solutions that only split revenues with validators, the Scheduler also splits revenues with consumer chains.
 A portion of block space may also be designated for use by other chains within
 the Scheduler network, analogous to a free trade agreement where the goods
 and services of neighboring economies are given preference. The Scheduler system will provide a substrate for service providers to create a variety of MEVnative applications: settlement layers with cross-chain time preference, IBC
 relay aggregators and routing utilities, on-demand liquidity networks, or trustminimized best execution services.
-v1.1 15
+v1.2 14
 The Scheduler will be available first to Interchain Security consumer chains for
 a secure initial deployment. The intention is to expand to become the primary
 venue for future interchain block space. The cross-chain MEV revenues generated from the Interchain Scheduler will flow back to the Cosmos Hub Treasury
@@ -378,10 +381,10 @@ ecosystem growth.
 The function of the Interchain Allocator is to provide new Cosmos projects
 a more efficient path to user acquisition, liquidity, and long-term ecosystem
 alignment.
-Figure 9: The Interchain Allocator is a system for capital allocation and incentive alignment.
+Figure 7: The Interchain Allocator is a system for capital allocation and incentive alignment.
 The more Coin X that the Cosmos Hub holds and the more ATOM that Chain X holds, the
 more incentive aligned the two chains become.
-v1.1 16
+v1.2 15
 The Allocator provides two basic tools that enable incentive-aligned communities to develop strategies for economic coordination on behalf of the Cosmos
 Hub:
 1. Covenant: a system for establishing multilateral agreements with designated chains and IBC-enabled entities.
@@ -414,11 +417,11 @@ action by each protocol. To use it, one protocol sets parameters and deposits
 the funds into a covenant. If the other protocol has any issues with the original
 parameters, they may establish and fund a new covenant with updated parameters. This process repeats until a covenant is fully funded, at which point the
 deal terms are active.
-v1.1 17
+v1.2 16
 While the Covenant system itself is a simple primitive, other protocols can
 use this system to build increasingly sophisticated multilateral agreements to
 improve inter-protocol coordination, liquidity provisioning, and incentive alignment.
-Figure 10: The Hub’s Allocation DAO uses the Covenant system to enter into on-chain
+Figure 8: The Hub’s Allocation DAO uses the Covenant system to enter into on-chain
 agreements with other chains. In time, the Hub may support multiple Allocation DAOs.
 Other chains may form their own Allocation DAOs, which would further streamline crossprotocol coordination.
 Rebalancer
@@ -431,7 +434,7 @@ Users of the Rebalancer can set parameters to strike the desired balance between
 urgency and slippage minimization on a portfolio or per-asset basis.
 10Frankie; Robinson, Dan; White, Dave; andy8052. “Gradual Dutch Auctions.” Apr. 2022,
 https://www.paradigm.xyz/2022/04/gda.
-v1.1 18
+v1.2 17
 Interchain Allocation
 Together, these tools can be used to create collateralized agreements with other
 decentralized entities, deploying and rebalancing capital. Examples of how protocols may use the Allocator include:
@@ -465,7 +468,7 @@ Lastly, in addition to the network having the largest and most sophisticated
 validator set, Cosmos can also use capital allocation as an added incentive for
 chains to choose the Cosmos Hub as their Interchain Security provider and
 further integrate with the Cosmos Network as it matures.
-v1.1 19
+v1.2 18
 In addition to these immediate next steps for the Cosmos Hub, the Allocator
 opens numerous opportunities for expanding the greater Cosmos Network:
 1. Multiple Allocator DAOs: The Allocator would be designed to allow
@@ -494,7 +497,7 @@ primary reserve asset of the interchain. The Cosmos Network’s expanding
 sphere of ATOM-based collateral establishes a region of cooperative integration, benefiting all those who contribute to its success. In providing a generalized multi-party collateralization system, the Interchain Allocator forms the
 basis for a more collaborative interchain economy, empowering creative endeavors that leverage the primitive to engender trust and effect the next phase of
 interchain growth.
-v1.1 20
+v1.2 19
 5 Cosmos Governance: A Forum for Sovereign
 Interoperability
 The Cosmos design pattern is one of composable modules and standardized messaging that gives rise to emergent structure. This philosophy runs through the
@@ -527,8 +530,9 @@ like for three different entities.
 https://blog.cosmos.network/the-mind-body-and-soul-of-cosmos-140ee7cec0cd.
 12Buchman, Ethan. “Phases of Cosmos.” Sep. 2022,
 https://ebuchman.github.io/posts/phases-of-cosmos/.
-v1.1 21
-Figure 11: Given the complexity of the ideas proposed in this paper, creating a flexible system to deploy new DAOs, help them coordinate with one another, and hold them accountable
+v1.2 20
+Figure 9: Given the complexity of the ideas proposed in this paper, creating a flexible system
+to deploy new DAOs, help them coordinate with one another, and hold them accountable
 would increase the likelihood of successful implementation. The proposed governance stack
 combines new and existing components (e.g., Gov, Groups, Authz, and Interchain Accounts)
 to create a language shared by DAOs operating on the Hub. New features include systems
@@ -539,7 +543,7 @@ Most of the requisite technology is available today—Groups, Authz, and Interch
 for creating organizational assemblages that interact on-chain. The parameters above are put forward for community consideration with the intention of
 arriving at a standard for establishing Hub-based DAOs that can effectively
 coordinate and govern shared resources.
-v1.1 22
+v1.2 21
 5.2 The Cosmos Assembly
 With a more articulated way to establish new entities, a wide range of organizational structures can establish themselves on the Cosmos Hub. Core teams can
 establish a presence, as could representatives from across the ecosystem, including infrastructure providers, community organizations, and other chains.
@@ -551,14 +555,14 @@ The Cosmos Hub Assembly, a proposed decentralized organizational body, could
 represent the strategic interests of the Cosmos Hub community. The Cosmos
 Hub Assembly, together with a set of domain-specific Councils, form a governance supply chain that enables a variety of entities to work within a common
 framework.13
-Figure 12: Proposed Cosmos Hub governance structure. DAOs may apply to become a
+Figure 10: Proposed Cosmos Hub governance structure. DAOs may apply to become a
 council if they wish to access Cosmos Hub Treasury resources or become accountable for
 delegated Cosmos Hub roles and capabilities. All councils together form the Cosmos Assembly,
 which does yearly budgeting and goal-setting. The Assembly is accountable to ATOM holders,
 who have ultimate veto.
 13Hasu. “Simple MakerDAO — Governance from first principles.” Jun. 2022,
 https://forum.makerdao.com/t/simple-makerdao-governance-from-first-principles/16207.
-v1.1 23
+v1.2 22
 Today, the Cosmos Stack and the Cosmos Hub are built by a variety of organizations that contribute to product-specific working groups. Most recently, the
 Consensus Council was created to formalize one such multi-stakeholder relationship. Likewise, temporary initiatives, such as proposal 72 to onboard consumer
 chains to Interchain Security, are typically mediated by multi-signature committees.
@@ -580,9 +584,12 @@ Cosmos Hub forum that includes the items required by the Governance Stack.
 It must then convince ATOM governance to pass the proposal. If successful, the
 council will be added to the Charter, resourced, and accorded the appropriate
 authorities.
-The Cosmos Assembly is composed of delegates from each of the respective councils. The number of seats for any given council represents the weight of that
-council within the Cosmos Assembly. On a yearly basis, the Cosmos Assembly
-will set priorities, perform a participatory budgeting process, and draft a proposal that will be proposed optimistically, subject to ATOM holder veto.
+The Cosmos Assembly is composed of delegates from each of the respective
+councils. The number of seats for any given council represents the weight of
+that council within the Cosmos Assembly. On a yearly basis, the Cosmos Assembly will set priorities, perform a participatory budgeting process, and draft
+a proposal that will be proposed optimistically, subject to ATOM holder veto.
+Prior to final budget proposal, the Cosmos Assembly must give ATOM holders
+the opportunity to provide positive signal on budget subcomponents.
 Public accountability is perhaps the most significant challenge of decentralized
 governance. The introduction of a new Community Council can aid in this effort. The Cosmos Community Council will represent the interests of the ATOM
 Community within the Cosmos Assembly and on a day-to-day basis. Their role
@@ -592,7 +599,7 @@ important facets of ongoing workstreams. The precise role of the Community
 Council and specifics about its formation should be discussed on the Cosmos
 Hub Forum in conjunction with the initial formation of the Cosmos Hub Charter.
 14Informal Systems. “Workflow.” Accessed Sep. 2022, https://workflow.informal.systems/.
-v1.1 24
+v1.2 23
 The Cosmos Governance Stack and the subsequent formation of a Cosmos Assembly permit the higher-order organization required for the next phase of Cosmos’s development. Though Cosmos Hub governance is in some ways the most
 mature in the ecosystem, it will need to evolve significantly to meet the needs
 of a growing political economy. The first step in this process should be a community dialogue on the forum about a Cosmos Hub Charter and initial Rules
@@ -611,11 +618,11 @@ and community come together to drive the expansion of the interchain with
 credibly neutral functionality, capital, and social infrastructure.
 Today, the Cosmos Stack is the leading framework for building sovereign interoperable blockchains. With the introduction of the Scheduler and Allocator systems, the Cosmos Hub will become the leading platform for scaling IBC-enabled
 applications, securing foundational infrastructure for the interchain and accelerating economic coordination for the next chapter of interchain growth.
-v1.1 25
-Figure 13: Cosmos is a political union of sovereign interoperable blockchains with shared
+v1.2 24
+Figure 11: Cosmos is a political union of sovereign interoperable blockchains with shared
 public infrastructure. Regions of interchain features utilizing ATOM comprise the Cosmos
 Network. Placement of chains is for illustrative purposes only.
-v1.1 26
+v1.2 25
 7 Disclaimer
 This paper is a collaborative effort by many members of the Cosmos community. It outlines
 a proposed direction for the Cosmos Hub. However, the contents do not entail a commitment
@@ -650,4 +657,4 @@ to update publicly such forward-looking statements, whether as a result of new i
 future events, or otherwise. All forward-looking statements attributable to the PARTIES or
 persons acting on their behalf are expressly qualified in their entirety by these and any other
 cautionary statements and risk factors contained herein.
-v1.1 27
+v1.2 26
